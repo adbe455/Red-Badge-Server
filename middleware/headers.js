@@ -1,6 +1,6 @@
 module.exports = (req, res, next) => {
 
-        var allowedOrigins = ['http://localhost:4200/', 'https://crithits.herokuapp.com'];
+        var allowedOrigins = ['http://localhost:4200', 'https://crithits.herokuapp.com', 'https://crithits2.herokuapp.com'];
         var origin = req.headers.origin;
         //console.log(allowedOrigins.indexOf(origin))
         
