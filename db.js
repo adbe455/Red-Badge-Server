@@ -7,7 +7,11 @@ const Sequelize = require('sequelize');
 // })
 
 // HEROKU
-const sequelize = new Sequelize(process.env.DATABASE_URL, {
+// const sequelize = new Sequelize(process.env.DATABASE_URL, {
+//     dialect: 'postgres'
+// })
+
+const sequelize = new Sequelize(process.env.NAME, 'postgres', process.env.PASS, {
     dialect: 'postgres'
 })
 
